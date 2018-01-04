@@ -3,22 +3,22 @@
   
 #   目录结构
 
-src == 原始文件
+#### src == 原始文件
 
-    arr    //数组方法
+  arr//数组方法
     
-    string  // 字符串方法
+  string// 字符串方法
     
-    date    //日期方法
-dist ==合并文件
+   date  //日期方法
+#### dist ==合并文件
 
-     xl-do.js  //支持老版本的方法 基本没有涉及到es6的js
+   xl-do.js  //支持老版本的方法 基本没有涉及到es6的js
      
-     xl-do.min.js  //压缩版
+   xl-do.min.js  //压缩版
      
-     xl-do-es6.js  //大部分都是es6的语法,可能涉及到某些浏览器不支持,如遇到兼容 可以通过webpack / babel-loader编译
+   xl-do-es6.js  //大部分都是es6的语法,可能涉及到某些浏览器不支持,如遇到兼容 可以通过webpack / babel-loader编译
      
-     xl-do-es6.min.js//压缩版
+   xl-do-es6.min.js//压缩版
      
  
 #   使用方法 
