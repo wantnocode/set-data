@@ -67,7 +67,7 @@ function getEleCount (obj, ele) {
 }
 //7返回数组（字符串）出现最多的几次元素和出现次数////////////////////////////////////
 //arr, rank->长度，默认为数组长度，ranktype，排序方式，默认降序
-function getCount(arr, rank，ranktype){ 
+function getCount(arr, rank,ranktype){ 
     var obj = {}, k, arr1 = []
     //记录每一元素出现的次数
     for (var i = 0, len = arr.length; i < len; i++) {
