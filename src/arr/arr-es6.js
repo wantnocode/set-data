@@ -1,45 +1,44 @@
-//1数组去重/////////////////////////// （写俩种精简的）
-
-// 方法一
-// var arr = [1,2,1,2,3,4,324,2,4,23,432];
-var map={};
-var result = arr.filter(o=>map[o]?false:map[o]=true);
-//ES6新增的Set数据结构，类似于数组，但是里面的元素都是唯一的 ，其构造函数可以接受一个数组作为参数
-//ES6中Array新增了一个静态方法from，可以把类似数组的对象转换为数组
-//方法二  new 
-function removeRepeatArray(arr){
-    return Array.from(new Set(arr))
+//1数组去重/////////////////////////// 
+function removeRepeatArray(arr){   
+    return Array.from(new Set(arr))  // //ES6新增的Set数据结构，类似于数组，但是里面的元素都是唯一的 ，其构造函数可以接受一个数组作为参数
+                                    //ES6中Array新增了一个静态方法from，可以把类似数组的对象转换为数组
 }
-
 
 // 2 数组顺序打乱////////////////////////////
 function upsetArr(arr){
     return arr.sort(function(){ return Math.random() - 0.5});
 }
-//3数组最大值最小值//////////////////////////////
+//3数组最大值//////////////////////////////
 //这一块的封装，主要是针对数字类型的数组
 function maxArr(arr){
-    return Math.max.apply(null,arr);
+    return Math.max.apply(null,arr);  //max() 方法可返回指定的数字中带有最高值的数字。
 }
+// 数组最小值                                  //apply 改变指向为该数组 arr
 function minArr(arr){
-    return Math.min.apply(null,arr);
+    return Math.min.apply(null,arr);  //min() 方法可返回指定的数字中带有最低值的数字。 
 }
 
 //4 数组求和，平均值//////////////////////////
 //这一块的封装，主要是针对数字类型的数组
 //求和
 function sumArr(arr){
-    var sumText=0;
-    for(var i=0,len=arr.length;i<len;i++){
-        sumText+=arr[i];
-    }
-    return sumText
+    var sum=0;
+    arr.map(e=>{
+        sum+=e
+    })
+    return sum
 }
 //平均值,小数点可能会有很多位，这里不做处理，处理了使用就不灵活了！
 function covArr(arr){
+<<<<<<< HEAD:arr-methods/arr.js
     var sumText=sumArr(arr);
     var covText=sumText/arr.length;
     return covText
+=======
+    var sum=sumArr(arr);
+    var cov=sum/length;
+    return cov
+>>>>>>> summary:src/arr/arr-es6.js
 }
 
 //5从数组中随机获取元素/////////////////////////////////////
@@ -47,7 +46,7 @@ function covArr(arr){
 //2
 //randomOne([1,2,3,6,8,5,4,2,6])
 //1
-function randomOne(arr) {
+function randomArr(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 

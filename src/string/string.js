@@ -1,5 +1,9 @@
-// 1  去除字符串空格  四种情况
-//去除空格  type 1-所有空格  2-前后空格  3-前空格 4-后空格
+// 去除字符串空格  四种情况
+//去除空格  type 
+//1 :所有空格 
+//2 :前后空格  
+//3 :前空格 
+//4 :后空格
 function trim(str,type){
     switch (type){
         case 1:return str.replace(/\s+/g,"");
@@ -9,12 +13,12 @@ function trim(str,type){
         default:return str;
     }
 }
-// 2   字母大小写切换  
-/*type
-1:首字母大写   
-2：首页母小写
-3：大小写转换
-4：全部大写
+//字母大小写切换  
+/*type类型包括:
+1:首字母大写  
+2：首页母小写  
+3：大小写转换   
+4：全部大写   
 5：全部小写
  * */
 //changeCase('asdasd',1)
@@ -59,7 +63,7 @@ function changeCase(str,type)
 }
 
 
-// 3  字符串循环复制  
+//字符串循环复制  
 //repeatStr(str->字符串, count->次数)
 //repeatStr('123',3)
 //"123123123"
@@ -71,21 +75,21 @@ function repeatStr(str, count) {
     return text;
 }
 
-// 4  查找字符串 字段所出现的次数 ~
-
-function countStr (str,strSplit){
+//查找字符串 字段所出现的次数 ~
+function countStr(str,strSplit){
     return str.split(strSplit).length-1
 }
-// 比方说获得blog的出现次数
-// var strTest='sad44654blog5a1sd67as9dablog4s5d16zxc4sdweasjkblogwqepaskdkblogahseiuadbhjcibloguyeajzxkcabloguyiwezxc967'
-//countStr(strTest,'blog')
-//6  出现6次
 
-// 5   检测字符串   常用的正则匹配
+//字符串替换(字符串,要替换的字符,替换成什么)
+function replaceAll(str,AFindText,ARepText){
+　　　raRegExp = new RegExp(AFindText,"g");
+　　　return str.replace(raRegExp,ARepText);
+}
+
+//检测字符串   常用的正则匹配
 //checkType('165226226326','phone')
 //false
-//大家可以根据需要扩展
-function checkType (str, type) {
+function checkType(str, type) {
     switch (type) {
         case 'email':
             return /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(str);
@@ -106,4 +110,29 @@ function checkType (str, type) {
         default :
             return true;
     }
+}
+
+
+///随机生成一个规定长度的字符串
+function random(length) {
+    var str = Math.random().toString(36).substr(2);
+    if (str.length >= length) {
+        return str.substr(0, length);
+    }
+    str += random(length - str.length);
+    return str;
+}
+
+//找出字符串中最长的那个单词
+function longestWord(str, splitType) {
+    var _splitType = splitType || /\s+/g,
+        _max = 0, _item = '';
+    var strArr = str.split(_splitType);
+    strArr.forEach(function (item) {
+        if (_max < item.length) {
+            _max = item.length;
+            _item = item;
+        }
+    });
+    return {el: _item, max: _max};
 }
