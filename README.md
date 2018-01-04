@@ -7,7 +7,7 @@
 
   arr//数组方法
     
-  string// 字符串方法
+   string// 字符串方法
     
    date  //日期方法
 #### dist ==合并文件
@@ -16,7 +16,7 @@
      
    xl-do.min.js  //压缩版
      
-   xl-do-es6.js  //大部分都是es6的语法,可能涉及到某些浏览器不支持,如遇到兼容 可以通过webpack / babel-loader编译
+    xl-do-es6.js  //大部分都是es6的语法,可能涉及到某些浏览器不支持,如遇到兼容 可以通过webpack / babel-loader编译
      
    xl-do-es6.min.js//压缩版
      
