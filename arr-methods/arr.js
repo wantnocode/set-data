@@ -38,7 +38,7 @@ function sumArr(arr){
 //平均值,小数点可能会有很多位，这里不做处理，处理了使用就不灵活了！
 function covArr(arr){
     var sumText=sumArr(arr);
-    var covText=sumText/length;
+    var covText=sumText/arr.length;
     return covText
 }
 
