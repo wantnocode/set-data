@@ -17,27 +17,41 @@ dist ==合并文件
 #   使用方法 
 选择你对应的支持的浏览器版本去下载引用  看上文注释  == es6版和普通版
 
-1 removeRepeatArray// 数组去重 
+ 1 removeRepeatArray// 数组去重 
+
 var arr = [1,2,3,4,1,2,3]
+
 var arr1  = removeRepeatArray(arr)   // 输出 [1,2,3,4]
 
-2 upsetArr    // 数组顺序的随机打乱
+ 2 
+upsetArr    // 数组顺序的随机打乱
+
 var arr = [1,2,34]
+
 var arr1 = upsetArr(arr)  // 输出[2,1,34]  结果不确定 此处为举例
 
-3 maxArr    //取数组中最大的元素  仅限于全是数的数组
+ 3
+maxArr    //取数组中最大的元素  仅限于全是数的数组
+
 var arr =  [1,2,35]
+
 var arr1 = maxArr(arr)  //输出35 
 
-4 minArr    //取数组中最小的元素  仅限于全是数的数组
+ 4 
+minArr    //取数组中最小的元素  仅限于全是数的数组
+
 var arr =  [1,2,35]
+
 var arr1 = minArr(arr)  //输出1 
 
-5 sumArr   //取数组中所有元素之和  仅限于全是数的数组
+ 5 
+sumArr   //取数组中所有元素之和  仅限于全是数的数组
+
 var arr = [1,2,35]
+
 var arr1 = sumArr(arr)  //输出38 
 
-6
+ 6
 
 
     
