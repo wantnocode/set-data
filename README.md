@@ -4,13 +4,11 @@
   introduceArray,string,date对象常用方法封装
   
 ### Use steps (使用步骤)
--  git clone -- (克隆)
--  Import js file (引用对应js文件) 
-          文件目录:
-          * dist为引入目录
-          1: xl-do.js | xl-do.min.js(不涉及es6+语法)
-          2: xl-do-es6.js | xl-do-es6.min.js(涉及es6+语法)
--  call function (调用对应函数)
+- git clone -- (克隆)
+- Import js file (引用对应js文件) 
+     1: xl-do.js | xl-do.min.js(不涉及es6+语法)
+     2: xl-do-es6.js | xl-do-es6.min.js(涉及es6+语法)
+- call function (调用对应函数)
 
 ###  criterion:
 1: arr代表的就是要操作的数组对象 
