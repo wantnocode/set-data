@@ -1,34 +1,24 @@
-#  XL-DO
-  对javascript中Array 以及string 还有date等常用对象操作的方法进行封装的js,减轻你的压力,值得拥有！
+##  XL-DO
+
+### introduce(介绍)
+  introduceArray,string,date对象常用方法封装
   
-#   目录结构
+### Use steps (使用步骤)
+-  git clone -- (克隆)
+-  Import js file (引用对应js文件) 
+          文件目录:
+          * dist为引入目录
+          1: xl-do.js | xl-do.min.js(不涉及es6+语法)
+          2: xl-do-es6.js | xl-do-es6.min.js(涉及es6+语法)
+-  call function (调用对应函数)
 
-#### src == 原始文件
+###  criterion:
+1: arr代表的就是要操作的数组对象 
+2: (必传) 代表的是该参数必须传值  不能不传   
+3: 每个方法后面都会有解释告诉你这个干什么
 
-  arr//数组方法
-    
-   string// 字符串方法
-    
-   date  //日期方法
-#### dist ==合并文件
-
-   xl-do.js  //支持老版本的方法 基本没有涉及到es6的js
-     
-   xl-do.min.js  //压缩版
-     
-    xl-do-es6.js  //大部分都是es6的语法,可能涉及到某些浏览器不支持,如遇到兼容 可以通过webpack / babel-loader编译
-     
-   xl-do-es6.min.js//压缩版
-     
- 
-#   使用方法 
-把xd-do克隆到本地,然后引用js文件  如果需要全部方法那就引入xl-do.min.js 如果时局部的话可以引用 arr string 对应的文件夹下的js
-版本分为es6 和普通版  看你项目需求 支持什么版本  你就引入哪个版本  非常的简单  接下来具体介绍下方法
-
-### 彼此达成一个小协议 ！ 一  arr代表的就是要操作的数组对象  二  (必传) 代表的是该参数必须传值  不能不传   三 每个方法后面都会有解释告诉你这个干什么   四  有哪些地方有疑问欢迎留言  五  觉得对你有帮助 麻烦star！
-
-# API
-## 数组Methods
+## API
+### 数组Methods
 
  #### 1 removeRepeatArray(arr) // 数组去重   arr (必传)
 
