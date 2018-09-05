@@ -6,8 +6,8 @@
 ### Use steps (使用步骤)
 1. git clone -- (克隆)
 2. Import js file (引用对应js文件) 
-     1: xl-do.js | xl-do.min.js(不涉及es6+语法)
-     2: xl-do-es6.js | xl-do-es6.min.js(涉及es6+语法)
+     1. xl-do.js | xl-do.min.js(不涉及es6+语法)
+     2. xl-do-es6.js | xl-do-es6.min.js(涉及es6+语法)
 3. call function (调用对应函数)
 
 ###  criterion:
